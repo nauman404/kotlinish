@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/nav_graph" app:startDestination="@id/placeholder">
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/currentListFragment">
 
-    <fragment android:id="@+id/placeholder"/>
+    <fragment
+            android:id="@+id/currentListFragment"
+            android:name="com.kotlinish.views.fragments.CurrentListFragment"
+            android:label="@string/current_list_fragment"
+            tools:layout="@layout/fragment_current_list">
+        <action
+                android:id="@+id/fragmentListtoDetails"
+                app:destination="@id/currentDetailsFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/currentDetailsFragment"
+            android:name="com.kotlinish.views.fragments.CurrentDetailsFragment"
+            android:label="@string/current_details_fragment"
+            tools:layout="@layout/current_details_fragment">
+        <!--<action-->
+        <!--android:id="@+id/fragmentBtoC"-->
+        <!--app:destination="@id/fragmentC" />-->
+    </fragment>
+
 </navigation>
