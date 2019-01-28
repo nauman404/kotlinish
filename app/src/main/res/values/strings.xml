@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlinish</string>
+
+    <string name="current_list_fragment">Current List Fragment</string>
+    <string name="current_details_fragment">Current Details Fragment</string>
+
 </resources>
