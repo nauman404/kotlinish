@@ -3,6 +3,8 @@ Android kotlin clean architecture with latest android trends. #AAC, #Dagger2, #K
 
 //TODO:
 <ul>
+ <li>Android Jetpack</li>
+ <li>RxJava</li>
 <li>Circle CI Integrations</li>
 <li>Test Cases</li>
 <li>DI - Dagger2</li>
